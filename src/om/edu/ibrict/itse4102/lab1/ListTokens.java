@@ -8,10 +8,6 @@ import edu.princeton.cs.algs4.StdOut;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.antlr.v4.runtime.CharStream;
@@ -49,8 +45,6 @@ public class ListTokens {
             // create a lexer object that will tokenize the input
             MiniJLexer lexer = new MiniJLexer(input);
 
-            // Uncomment this to try the BailOutMiniJLexer
-            // BailOutMiniJLexer lexer = new BailOutMiniJLexer(input);
             // get the initial token
             Token token = lexer.nextToken();
 
